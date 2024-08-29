@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+header {
+    background-color: #81d4fa;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav>ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li:hover a {
+    color: #e7e3e3;
+    text-decoration: overline;
+}
+h2 {
+    text-align: center;
+}
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.card {
+    width: 300px;
+    /* height: 465px; */
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #81d4fa;
+    display: inline-block;
+    margin: 20px;
+
+}
+
+.card img {
+    width: 210px;
+    height: 120px;
+    text-align: center;
+    margin: 70px 0px 70px 0px;
+}
+
+.card button {
+    background-color: #81d4fa;
+    color: white;
+    border: none;
+    padding: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition-duration: 500ms;
+}
+
+.card button:hover {
+    transform: scale(1.1);
+}
+
+.card button:active {
+    background-color: red;
+}
+
+.reviews {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.review {
+    text-align: center;
+    border: 1px solid #81d4fa;
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+    background-color: #f0f8ff;
+    width: 457px; 
+    height: 350px;
+
+}
+
+.review img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.review:first-child {
+    background-color: #f0f8ff;
+}
+.review:nth-child(3) {
+    background-color: #fef5ec;
+}
+
+.review:last-child {
+    background-color: #fffacd;
+}
+
+.contacts {
+    background-color: #ebe2e2;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+hr {
+    border-color: #81d4fa;
+    opacity: 0.5;
+}
+
+footer p {
+    text-align: center;
+    padding: 20px;
+}
+
+.review:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:767px) {
+    h2 {
+        text-align: center;
+    }
+    .card {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:424px) {
+    ul {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .reviews {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .review {
+        width: min-content;
+    }
+    h2 {
+        font-size: 20px;
+    }
+}
